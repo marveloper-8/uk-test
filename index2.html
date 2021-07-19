@@ -37,8 +37,35 @@
         font-size: 30px;
       }
       .header{
-          padding:100px;
-      }
+        padding:100px;
+        display:grid;
+        grid-template-columns:3fr 1fr;
+    }
+
+    .shadow {
+    position: relative;
+    box-shadow: 0 0 25px 0 rgba(50,50,50,.3) inset;
+    }
+
+    .shadow:after {
+    content: "";
+    position: relative;
+    }
+
+    .curved:after, .curved-2:after {
+    position: relative;
+    z-index: -2;
+    }
+
+    .curved:after {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    box-shadow: 0 0px 10px 7px rgba(100,100,100,0.5);
+    border-radius: 450px / 15px
+    }
         table{
             border-collapse:collapse;
             /* width:1000px; */
@@ -62,14 +89,18 @@
             text-align:center;
         }
         tr:nth-child(odd){
-            background:#111C45;
+            background:#A6C3E0;
+        }
+        tr:nth-child(even){
+            background:#d4e9ff;
         }
         td{
             padding:15px;
             border:2px solid #fff;
         }
         .icon{
-            width:50px;
+            height:50px;
+            width:auto;
         }
         th:last-child, td:last-child{
             border-right:none;
@@ -148,9 +179,11 @@
     </style>
   </head>
     <body>
-        <div class="header bg-1 font-30">
-        AT A GLANCE GUIDE FOR ARRIVALS TO THE UK FOLLOWING IMPLEMENTATION OF THE
-        'TRAFFIC LIGHT SYSTEM'
+        <div class="header shadow curved bg-1 font-30">
+            <div>AT A GLANCE GUIDE FOR ARRIVALS TO THE UK FOLLOWING IMPLEMENTATION OF THE
+        'TRAFFIC LIGHT SYSTEM'</div>
+                <div></div>
+        
         </div>
         <table className="font-16">
             <thead>

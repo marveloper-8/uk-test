@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>Forgot Password</title>
+        <style>
+        body {
+            font-size: 14px;
+            font-family: 'Raleway', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .bg-1 {
+            background: #2e5c99;
+            color: #fff;
+        }
+        .bg-2 {
+            background: #92D050;
+            color: #fff;
+        }
+        .bg-3 {
+            background: #FFC000;
+            color: #fff;
+        }
+        .bg-4 {
+            background: #E60000;
+            color: #fff;
+        }
+
+        .color-1{
+            color:#989898;
+        }
+        .color-2{
+            color:#1A8BB3;
+        }
+        .color-3{
+            color:#0C6685;
+        }
+        .color-black{
+            color:#000;
+        }
+        section{
+            padding:50px 25vw;
+        }
+        .font-30 {
+            font-size: 30px;
+        }
+
+        .bold-700{
+            font-weight:700;
+        }
+
+        button{
+            outline:none;
+            border:none;
+            background:none;
+        }
+        .button-1{
+            border: 1px solid #1A8BB3;
+            box-sizing: border-box;
+            border-radius: 50px;
+            padding:11px 23px;
+            color:#1A8BB3;
+            font-weight:700;
+            margin-right:12px;
+        }
+        .button-2{
+            background: #1A8BB3;
+            border-radius: 6px;
+            padding:10px 20px;
+            color:#fff;
+        }
+        
+        .navigation .top{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding-bottom:30px;
+            margin-bottom:50px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        .navigation .top .left,
+        .navigation .top .right{
+            display:flex;
+            align-items:center;
+        }
+        .navigation .top .left img{
+            margin-right:5px;
+        }
+        .navigation .bottom{
+            display:flex;
+            align-items:center;
+        }
+        .navigation .bottom img{
+            margin-right:165px;
+        }
+        .navigation .bottom span{
+            margin-right:70px;
+        }
+
+        .header{
+            background: linear-gradient(257.76deg, #0C6685 33.67%, #1A8BB3 72.87%);
+            font-size:36px;
+            font-weight:600;
+            color:#fff;
+        }
+        .header .inner{
+            padding:40px 0 20px 0;
+        }
+
+        .content{
+            font-weight:600;
+        }
+        .content .inner{
+            display:grid;
+            grid-template-columns:1fr 3fr;
+            justify-content:space-between!important;
+            margin-top:10px;
+        }
+        .content .inner .selection{
+            padding:43px 48px 43px 35px;
+            background: #EDFAFF;
+            box-shadow: 0px 16px 24px rgba(237, 250, 255, 0.2), 0px 2px 6px rgba(237, 250, 255, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            border-radius: 7px;
+        }
+        .content .inner .selection .item{
+            margin-bottom:25px;
+            display:grid;
+            grid-template-columns:1fr 5fr;
+        }
+        .content .inner .selection .item:last-child{
+            margin:0;
+        }
+        .content .inner .selection .item input{
+            margin-right:20px;
+        }
+        .content .table{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.05);
+            border-radius: 7px;
+            width:90%;
+            margin-left:10%;
+        }
+        .content .table .table-item{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            padding:15px 63px;
+            border-top:1px solid #eeeeee;
+            align-items:center;
+            transition:.4s ease-in-out all;
+        }
+        .content .table .table-item button{
+            opacity:0;
+            transition:.4s ease-in-out all;
+        }
+        .content .table .table-item:hover{
+            background:#eee;
+            transition:.4s ease-in-out all;
+        }
+        .content .table .table-item:hover button{
+            opacity:1;
+            transition:.4s ease-in-out all;
+        }
+        .content .table .table-head{
+            background:#0C6685;
+            padding:35px 63px;
+            color:#fff;
+            border-radius:7px 7px 0 0;
+            border:none;
+        }
+
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+
+        /* start laptop version */
+        @media screen and (max-width: 2450px) {
+            section{
+                padding:50px 80px;
+            }
+        }
+
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+
+        /* tab version */
+        @media screen and (max-width: 1024px) {
+        }
+
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+
+        /* mobile version */
+        @media screen and (max-width: 800px) {
+        }
+
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+        /* break */
+
+        /* mobile version */
+        @media screen and (max-width: 468px) {
+        }
+        </style>
+    </head>
+    <body>
+        <section class="navigation color-1 bold-700">
+            <div class="top">
+                <div class="left"><img src="icons/email.svg" /> INFO@UKTRAVELTEST.CO.UK</div>
+                <div class="right">
+                    <button class="button-1">Login</button>
+                    <button class="button-1">Register as an agent</button>
+                    <img src="icons/uk-flag.svg" />
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="icons/logo.png" />
+                <div class="right">
+                    <span>HOME</span>
+                    <span>ABOUT</span>
+                    <span>COVID TESTING</span>
+                    <span>PRICING</span>
+                    <span>FAQ'S</span>
+                    <span>CONTACT</span>
+                </div>
+            </div>
+        </section>
+        <section class="header"><div class="inner">Pricing</div></section>
+        <section class="content">
+            <div class="color-2">PRODUCTS</div>
+            <div class="inner">
+                <div class="selection color-1">
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Day 2 Tests</div>
+                    </div>
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Day 8 Tests</div>
+                    </div>
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Day 2 & Day 8 Tests</div>
+                    </div>
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Test to release (Day 5) Kit</div>
+                    </div>
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Day 2 & Day 8 with Test to release (Day 5) Package</div>
+                    </div>
+                    <div class="item">
+                        <div><input type="radio" name="selection" /></div>
+                        <div>Fit to fly test</div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="table-item table-head">
+                        <div>Name</div>
+                        <div>Price</div>
+                        <div></div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="table-normal table-item">
+                        <div class="color-3">All Healthcare services</div>
+                        <div class="color-black">$87</div>
+                        <div class="button">
+                            <button class="button-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
